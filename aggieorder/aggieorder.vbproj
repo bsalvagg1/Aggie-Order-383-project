@@ -133,6 +133,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Payment_Form.Designer.vb">
+      <DependentUpon>Payment_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ProductView.Designer.vb">
       <DependentUpon>ProductView.vb</DependentUpon>
     </Compile>
@@ -171,6 +177,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Payment_Form.resx">
+      <DependentUpon>Payment_Form.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProductView.resx">
       <DependentUpon>ProductView.vb</DependentUpon>
     </EmbeddedResource>
@@ -202,6 +211,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\credit-cards.png" />
     <Content Include="equipment.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -14,6 +14,9 @@ Public Class ProductView
         FileClose(2)
         imgcount = 0
         PictureBox1.Load(Image(imgcount))
+
+        'Attempting to have a dollar sign show up when the form loads
+        'EquipmentPrice_TextBox.Text = Format(EquipmentPrice_TextBox.Text, "$##.##")
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -61,7 +64,7 @@ Public Class ProductView
         ReDim Preserve prices(0 To L)
         ReDim Preserve selectedprod(0 To L)
 
-        price = CInt(TextBox1.Text)
+        price = CInt(EquipmentPrice_TextBox.Text)
         prices(L) = price
         selectprod = Label2.Text
         selectedprod(L) = selectprod

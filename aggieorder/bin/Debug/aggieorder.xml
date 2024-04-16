@@ -22,6 +22,11 @@ aggieorder
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:aggieorder.My.Resources.Resources.credit_cards">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="T:aggieorder.equipmentDataSet">
 <summary>
 Represents a strongly typed in-memory cache of data.

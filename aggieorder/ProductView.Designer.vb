@@ -29,7 +29,7 @@ Partial Class ProductView
         Me.EquipmentBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.EquipmentDataSet = New aggieorder.equipmentDataSet()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.EquipmentPrice_TextBox = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.EquipmentTableAdapter = New aggieorder.equipmentDataSetTableAdapters.EquipmentTableAdapter()
@@ -47,17 +47,19 @@ Partial Class ProductView
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Location = New System.Drawing.Point(9, 7)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(332, 38)
+        Me.Label1.Size = New System.Drawing.Size(401, 46)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Available Equipment"
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(28, 86)
+        Me.PictureBox1.Location = New System.Drawing.Point(21, 70)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(421, 324)
+        Me.PictureBox1.Size = New System.Drawing.Size(316, 263)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
@@ -66,9 +68,10 @@ Partial Class ProductView
         '
         Me.Label2.AutoSize = True
         Me.Label2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EquipmentBindingSource, "Name", True))
-        Me.Label2.Location = New System.Drawing.Point(25, 67)
+        Me.Label2.Location = New System.Drawing.Point(19, 54)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(48, 16)
+        Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Label2"
         '
@@ -85,27 +88,30 @@ Partial Class ProductView
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(474, 86)
+        Me.Label3.Location = New System.Drawing.Point(356, 70)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(41, 16)
+        Me.Label3.Size = New System.Drawing.Size(34, 13)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Price "
         '
-        'TextBox1
+        'EquipmentPrice_TextBox
         '
-        Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EquipmentBindingSource, "Price", True))
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(477, 105)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(238, 27)
-        Me.TextBox1.TabIndex = 6
+        Me.EquipmentPrice_TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EquipmentBindingSource, "Price", True))
+        Me.EquipmentPrice_TextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EquipmentPrice_TextBox.Location = New System.Drawing.Point(358, 85)
+        Me.EquipmentPrice_TextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.EquipmentPrice_TextBox.Name = "EquipmentPrice_TextBox"
+        Me.EquipmentPrice_TextBox.Size = New System.Drawing.Size(180, 31)
+        Me.EquipmentPrice_TextBox.TabIndex = 6
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(474, 156)
+        Me.Label4.Location = New System.Drawing.Point(356, 127)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(75, 16)
+        Me.Label4.Size = New System.Drawing.Size(60, 13)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Description"
         '
@@ -113,9 +119,10 @@ Partial Class ProductView
         '
         Me.RichTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EquipmentBindingSource, "Description", True))
         Me.RichTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTextBox1.Location = New System.Drawing.Point(477, 175)
+        Me.RichTextBox1.Location = New System.Drawing.Point(358, 142)
+        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(238, 181)
+        Me.RichTextBox1.Size = New System.Drawing.Size(180, 148)
         Me.RichTextBox1.TabIndex = 8
         Me.RichTextBox1.Text = ""
         '
@@ -126,9 +133,10 @@ Partial Class ProductView
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(604, 362)
+        Me.Button1.Location = New System.Drawing.Point(453, 294)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(111, 48)
+        Me.Button1.Size = New System.Drawing.Size(83, 39)
         Me.Button1.TabIndex = 9
         Me.Button1.Text = "Next"
         Me.Button1.UseVisualStyleBackColor = True
@@ -136,9 +144,10 @@ Partial Class ProductView
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(477, 362)
+        Me.Button2.Location = New System.Drawing.Point(358, 294)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(111, 48)
+        Me.Button2.Size = New System.Drawing.Size(83, 39)
         Me.Button2.TabIndex = 10
         Me.Button2.Text = "Back"
         Me.Button2.UseVisualStyleBackColor = True
@@ -146,9 +155,10 @@ Partial Class ProductView
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(477, 429)
+        Me.Button3.Location = New System.Drawing.Point(358, 349)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(111, 48)
+        Me.Button3.Size = New System.Drawing.Size(83, 39)
         Me.Button3.TabIndex = 11
         Me.Button3.Text = "Add to Cart"
         Me.Button3.UseVisualStyleBackColor = True
@@ -156,9 +166,10 @@ Partial Class ProductView
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(604, 429)
+        Me.Button4.Location = New System.Drawing.Point(453, 349)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(111, 48)
+        Me.Button4.Size = New System.Drawing.Size(83, 39)
         Me.Button4.TabIndex = 12
         Me.Button4.Text = "View Cart"
         Me.Button4.UseVisualStyleBackColor = True
@@ -166,18 +177,19 @@ Partial Class ProductView
         'Button5
         '
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(677, 12)
+        Me.Button5.Location = New System.Drawing.Point(508, 10)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 35)
+        Me.Button5.Size = New System.Drawing.Size(56, 28)
         Me.Button5.TabIndex = 13
         Me.Button5.Text = "Home"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'ProductView
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(764, 489)
+        Me.ClientSize = New System.Drawing.Size(573, 397)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -185,11 +197,12 @@ Partial Class ProductView
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.EquipmentPrice_TextBox)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "ProductView"
         Me.Text = "ProductView"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -204,7 +217,7 @@ Partial Class ProductView
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents EquipmentPrice_TextBox As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents EquipmentDataSet As equipmentDataSet
