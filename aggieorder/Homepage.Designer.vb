@@ -31,15 +31,15 @@ Partial Class Homepage
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.EquipmentBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.EquipmentDataSet = New aggieorder.equipmentDataSet()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.EquipmentDataSet = New aggieorder.equipmentDataSet()
-        Me.EquipmentBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.EquipmentTableAdapter = New aggieorder.equipmentDataSetTableAdapters.EquipmentTableAdapter()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EquipmentDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EquipmentBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EquipmentDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -108,6 +108,16 @@ Partial Class Homepage
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "Label3"
         '
+        'EquipmentBindingSource
+        '
+        Me.EquipmentBindingSource.DataMember = "Equipment"
+        Me.EquipmentBindingSource.DataSource = Me.EquipmentDataSet
+        '
+        'EquipmentDataSet
+        '
+        Me.EquipmentDataSet.DataSetName = "equipmentDataSet"
+        Me.EquipmentDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -125,7 +135,7 @@ Partial Class Homepage
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(111, 61)
         Me.Button4.TabIndex = 11
-        Me.Button4.Text = "View Product"
+        Me.Button4.Text = "Product Details"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
@@ -137,16 +147,6 @@ Partial Class Homepage
         Me.Button5.TabIndex = 12
         Me.Button5.Text = "Next"
         Me.Button5.UseVisualStyleBackColor = True
-        '
-        'EquipmentDataSet
-        '
-        Me.EquipmentDataSet.DataSetName = "equipmentDataSet"
-        Me.EquipmentDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'EquipmentBindingSource
-        '
-        Me.EquipmentBindingSource.DataMember = "Equipment"
-        Me.EquipmentBindingSource.DataSource = Me.EquipmentDataSet
         '
         'EquipmentTableAdapter
         '
@@ -170,8 +170,8 @@ Partial Class Homepage
         Me.Name = "Homepage"
         Me.Text = "Homepage"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EquipmentDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EquipmentBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EquipmentDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

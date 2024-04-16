@@ -33,3 +33,4 @@ C:\Users\brand\Desktop\GitHub\Aggie-Order-383-project\aggieorder\obj\Debug\aggie
 C:\Users\brand\Desktop\GitHub\Aggie-Order-383-project\aggieorder\obj\Debug\aggieorder.pdb
 C:\Users\brand\Desktop\GitHub\Aggie-Order-383-project\aggieorder\obj\Debug\aggieorder.ViewAccount.resources
 C:\Users\brand\Desktop\GitHub\Aggie-Order-383-project\aggieorder\obj\Debug\aggieorder.ProductView.resources
+C:\Users\brand\Desktop\GitHub\Aggie-Order-383-project\aggieorder\obj\Debug\aggieorder.Cart.resources

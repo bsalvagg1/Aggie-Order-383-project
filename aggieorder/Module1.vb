@@ -10,6 +10,6 @@
     Public price As Integer
     Public selectedprod() As String
     Public selectprod As String
-    Public L As Integer
-
+    Public L As Integer = 0
+    Public p, tax, tprice As Decimal
 End Module

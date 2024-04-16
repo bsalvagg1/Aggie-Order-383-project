@@ -58,11 +58,13 @@ Public Class ProductView
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         'add to cart
 
+        ReDim Preserve prices(0 To L)
+        ReDim Preserve selectedprod(0 To L)
 
         price = CInt(TextBox1.Text)
-        prices.Append(price)
-        selectprod = Label1.Text
-        selectedprod.Append(selectprod)
+        prices(L) = price
+        selectprod = Label2.Text
+        selectedprod(L) = selectprod
         L += 1
 
 
@@ -73,5 +75,11 @@ Public Class ProductView
         'view cart
         Me.Hide()
         Cart.Show()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        'home
+        Me.Hide()
+        Homepage.Show()
     End Sub
 End Class
