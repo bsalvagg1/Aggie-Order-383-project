@@ -22,10 +22,24 @@ Partial Class Homepage
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Homepage))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.EquipmentDataSet = New aggieorder.equipmentDataSet()
+        Me.EquipmentBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.EquipmentTableAdapter = New aggieorder.equipmentDataSetTableAdapters.EquipmentTableAdapter()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EquipmentDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EquipmentBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -35,53 +49,145 @@ Partial Class Homepage
         Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(269, 38)
-        Me.Label1.TabIndex = 2
+        Me.Label1.TabIndex = 1
         Me.Label1.Text = "AggieOrder.com"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(592, 35)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(196, 22)
-        Me.TextBox1.TabIndex = 3
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(589, 12)
+        Me.Label2.Location = New System.Drawing.Point(626, 9)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(62, 16)
-        Me.Label2.TabIndex = 4
+        Me.Label2.TabIndex = 5
         Me.Label2.Text = "Account"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(578, 30)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(214, 27)
+        Me.TextBox1.TabIndex = 4
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(490, 17)
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.Location = New System.Drawing.Point(476, 30)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(81, 39)
-        Me.Button1.TabIndex = 5
+        Me.Button1.Size = New System.Drawing.Size(96, 72)
+        Me.Button1.TabIndex = 6
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(578, 67)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(213, 35)
+        Me.Button2.TabIndex = 7
+        Me.Button2.Text = "Your Account"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(190, 157)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(433, 277)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 8
+        Me.PictureBox1.TabStop = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EquipmentBindingSource, "Name", True))
+        Me.Label3.Location = New System.Drawing.Point(187, 138)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(48, 16)
+        Me.Label3.TabIndex = 9
+        Me.Label3.Text = "Label3"
+        '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(190, 459)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(111, 61)
+        Me.Button3.TabIndex = 10
+        Me.Button3.Text = "Back"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Location = New System.Drawing.Point(352, 459)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(111, 61)
+        Me.Button4.TabIndex = 11
+        Me.Button4.Text = "View Product"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.Location = New System.Drawing.Point(512, 459)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(111, 61)
+        Me.Button5.TabIndex = 12
+        Me.Button5.Text = "Next"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'EquipmentDataSet
+        '
+        Me.EquipmentDataSet.DataSetName = "equipmentDataSet"
+        Me.EquipmentDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'EquipmentBindingSource
+        '
+        Me.EquipmentBindingSource.DataMember = "Equipment"
+        Me.EquipmentBindingSource.DataSource = Me.EquipmentDataSet
+        '
+        'EquipmentTableAdapter
+        '
+        Me.EquipmentTableAdapter.ClearBeforeFill = True
         '
         'Homepage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 575)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Homepage"
         Me.Text = "Homepage"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EquipmentDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EquipmentBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents EquipmentDataSet As equipmentDataSet
+    Friend WithEvents EquipmentBindingSource As BindingSource
+    Friend WithEvents EquipmentTableAdapter As equipmentDataSetTableAdapters.EquipmentTableAdapter
 End Class

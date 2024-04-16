@@ -38,7 +38,7 @@ Public Class Form1
         Do Until j > total - 1
             If TextBox1.Text = User(j) Then
                 If TextBox2.Text = pass(j) Then
-                    target = j
+                    accountname = user(j)
                     Me.Hide()
                     Homepage.Show()
                     Exit Do
@@ -51,9 +51,6 @@ Public Class Form1
                 Continue Do
             End If
         Loop
-
-        accountname = user(target)
-
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click

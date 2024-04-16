@@ -85,11 +85,22 @@
     <Compile Include="Admin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Cart.Designer.vb">
+      <DependentUpon>Cart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CreateAccount.Designer.vb">
       <DependentUpon>CreateAccount.vb</DependentUpon>
     </Compile>
     <Compile Include="CreateAccount.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="equipmentDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>equipmentDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -120,6 +131,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ProductView.Designer.vb">
+      <DependentUpon>ProductView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAccount.Designer.vb">
+      <DependentUpon>ViewAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="accountDB.resx">
@@ -127,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cart.resx">
+      <DependentUpon>Cart.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateAccount.resx">
       <DependentUpon>CreateAccount.vb</DependentUpon>
@@ -143,8 +169,25 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProductView.resx">
+      <DependentUpon>ProductView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAccount.resx">
+      <DependentUpon>ViewAccount.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="equipmentDataSet.xsc">
+      <DependentUpon>equipmentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="equipmentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>equipmentDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="equipmentDataSet.xss">
+      <DependentUpon>equipmentDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -155,6 +198,11 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="equipment.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
