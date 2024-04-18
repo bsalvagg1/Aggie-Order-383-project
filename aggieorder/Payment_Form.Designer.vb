@@ -32,12 +32,10 @@ Partial Class Payment_Form
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ZIPCode_TextBox = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.PaymentAmount_Label = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Pay_Button = New System.Windows.Forms.Button()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -130,16 +128,6 @@ Partial Class Payment_Form
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "ZIP/Postal Code:"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.aggieorder.My.Resources.Resources.credit_cards
-        Me.PictureBox1.Location = New System.Drawing.Point(32, 108)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(293, 50)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -189,7 +177,6 @@ Partial Class Payment_Form
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.PaymentAmount_Label)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.ZIPCode_TextBox)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Code_TextBox)
@@ -202,7 +189,6 @@ Partial Class Payment_Form
         Me.Controls.Add(Me.Label1)
         Me.Name = "Payment_Form"
         Me.Text = "Payment_Form"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -218,7 +204,6 @@ Partial Class Payment_Form
     Friend WithEvents Label4 As Label
     Friend WithEvents ZIPCode_TextBox As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label6 As Label
     Friend WithEvents PaymentAmount_Label As Label
     Friend WithEvents Label8 As Label
