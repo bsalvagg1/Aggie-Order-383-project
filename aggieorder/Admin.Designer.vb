@@ -36,7 +36,7 @@ Partial Class Admin
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(260, 48)
+        Me.Label1.Size = New System.Drawing.Size(208, 38)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Admin Login"
         '
@@ -46,7 +46,7 @@ Partial Class Admin
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(229, 269)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(226, 20)
+        Me.Label3.Size = New System.Drawing.Size(181, 16)
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Admin Account Password"
         '
@@ -56,7 +56,7 @@ Partial Class Admin
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(229, 207)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(193, 20)
+        Me.Label2.Size = New System.Drawing.Size(154, 16)
         Me.Label2.TabIndex = 11
         Me.Label2.Text = "Admin Account Name"
         '
@@ -65,6 +65,7 @@ Partial Class Admin
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(232, 236)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox2.Size = New System.Drawing.Size(339, 30)
         Me.TextBox2.TabIndex = 10
         '

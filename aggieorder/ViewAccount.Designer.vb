@@ -27,9 +27,9 @@ Partial Class ViewAccount
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -48,9 +48,9 @@ Partial Class ViewAccount
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(229, 295)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(109, 16)
+        Me.Label3.Size = New System.Drawing.Size(75, 16)
         Me.Label3.TabIndex = 8
-        Me.Label3.Text = "New Password"
+        Me.Label3.Text = "Password"
         '
         'Label2
         '
@@ -78,42 +78,44 @@ Partial Class ViewAccount
         Me.TextBox1.Size = New System.Drawing.Size(339, 30)
         Me.TextBox1.TabIndex = 5
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(229, 347)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(165, 16)
-        Me.Label4.TabIndex = 10
-        Me.Label4.Text = "Confirm New Password"
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(232, 314)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(339, 30)
-        Me.TextBox3.TabIndex = 9
-        '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(232, 391)
+        Me.Button1.Location = New System.Drawing.Point(232, 348)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(338, 38)
         Me.Button1.TabIndex = 11
-        Me.Button1.Text = "Confirm Change"
+        Me.Button1.Text = "Change Password"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(232, 494)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(338, 38)
+        Me.Button2.TabIndex = 12
+        Me.Button2.Text = "Cancel"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(232, 450)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(338, 38)
+        Me.Button3.TabIndex = 13
+        Me.Button3.Text = "Back to Home"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'ViewAccount
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 475)
+        Me.ClientSize = New System.Drawing.Size(800, 606)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBox2)
@@ -131,7 +133,7 @@ Partial Class ViewAccount
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class
