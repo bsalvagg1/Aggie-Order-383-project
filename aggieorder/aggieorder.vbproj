@@ -145,6 +145,12 @@
     <Compile Include="ProductView.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Shipping_Form.Designer.vb">
+      <DependentUpon>Shipping_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Shipping_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ViewAccount.Designer.vb">
       <DependentUpon>ViewAccount.vb</DependentUpon>
     </Compile>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProductView.resx">
       <DependentUpon>ProductView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shipping_Form.resx">
+      <DependentUpon>Shipping_Form.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewAccount.resx">
       <DependentUpon>ViewAccount.vb</DependentUpon>

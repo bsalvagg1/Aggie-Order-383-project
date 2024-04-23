@@ -29,7 +29,20 @@ Public Class Payment_Form
         PaymentAmount_Label.Text = Format(tprice, "$0.00")
     End Sub
 
+    Private Sub GoToShipping_Button_Click(sender As Object, e As EventArgs) Handles GoToShipping_Button.Click
+        'Store the Billing Address values
+        BillAddress_AddressLine = CStr(AddressLine_TextBox.Text)
+        BillAddress_City = CStr(City_TextBox.Text)
+        BillAddress_State = CStr(State_ComboBox.Text)
+        BillAddress_ZipCode = CStr(ZIPCode_TextBox.Text)
 
+        'Show the Shipping Form
+        Me.Hide()
+        Shipping_Form.Show()
+    End Sub
 
-
+    Private Sub BackToCart_Button_Click(sender As Object, e As EventArgs) Handles BackToCart_Button.Click
+        Me.Hide()
+        Cart.Show()
+    End Sub
 End Class

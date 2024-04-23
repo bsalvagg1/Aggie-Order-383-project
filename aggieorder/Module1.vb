@@ -12,4 +12,8 @@
     Public selectprod As String
     Public L As Integer = 0
     Public p, tax, tprice As Decimal
+    Public BillAddress_AddressLine As String
+    Public BillAddress_City As String
+    Public BillAddress_State As String
+    Public BillAddress_ZipCode As String
 End Module
