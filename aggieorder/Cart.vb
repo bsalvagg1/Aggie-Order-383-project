@@ -4,15 +4,18 @@
         Dim message As String
         For n = 0 To L - 1
             message &= selectedprod(n) & vbCrLf & vbCrLf
+            numprod += 1
         Next
+
         TextBox1.Text = message
+        prodmessage = message
 
         p = prices.Sum()
         tax = p * 0.05
         tprice = p + tax
         TextBox2.Text = Format(tprice, "$ 0.00")
 
-
+        Button3.Focus()
 
     End Sub
 
@@ -32,7 +35,13 @@
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         'checkout
-        Me.Hide()
-        Payment_Form.Show()
+        If accountname = "Guest" Then
+            Me.Hide()
+            GuestCreate.Show()
+        Else
+            Me.Hide()
+            Payment_Form.Show()
+        End If
+
     End Sub
 End Class

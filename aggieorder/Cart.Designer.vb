@@ -58,6 +58,8 @@ Partial Class Cart
         Me.TextBox1.Location = New System.Drawing.Point(19, 122)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.TextBox1.Size = New System.Drawing.Size(294, 158)
         Me.TextBox1.TabIndex = 5
         '
@@ -76,6 +78,7 @@ Partial Class Cart
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(367, 122)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(161, 27)
         Me.TextBox2.TabIndex = 7
         '

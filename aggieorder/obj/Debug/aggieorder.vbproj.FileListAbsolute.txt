@@ -57,3 +57,6 @@ C:\Users\Skullkrasher\Documents\GitHub\Aggie-Order-383-project\aggieorder\obj\De
 C:\Users\Skullkrasher\Documents\GitHub\Aggie-Order-383-project\aggieorder\obj\Debug\aggieorder.pdb
 C:\Users\brand\Desktop\GitHub\Aggie-Order-383-project\aggieorder\obj\Debug\aggieorder.Payment_Form.resources
 C:\Users\Skullkrasher\Documents\GitHub\Aggie-Order-383-project\aggieorder\obj\Debug\aggieorder.Shipping_Form.resources
+C:\Users\brand\Desktop\GitHub\Aggie-Order-383-project\aggieorder\obj\Debug\aggieorder.GuestCreate.resources
+C:\Users\brand\Desktop\GitHub\Aggie-Order-383-project\aggieorder\obj\Debug\aggieorder.Receipt.resources
+C:\Users\brand\Desktop\GitHub\Aggie-Order-383-project\aggieorder\obj\Debug\aggieorder.Shipping_Form.resources

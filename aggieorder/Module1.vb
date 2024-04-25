@@ -2,7 +2,7 @@
     Public user() As String
     Public pass() As String
     Public total As Integer = 0
-    Public target, index As Integer
+    Public target, index, numprod As Integer
     Public accountname As String
     Public imgcount As String
     Public Image() As String
@@ -16,4 +16,6 @@
     Public BillAddress_City As String
     Public BillAddress_State As String
     Public BillAddress_ZipCode As String
+    Public prodmessage As String
+
 End Module

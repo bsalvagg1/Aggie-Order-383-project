@@ -1,5 +1,5 @@
-﻿Public Class CreateAccount
-    Private Sub CreateAccount_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+﻿Public Class GuestCreate
+    Private Sub GuestCreate_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         FileOpen(1, "383project_account_info.csv", OpenMode.Append)
     End Sub
 
@@ -11,6 +11,6 @@
         FileClose(1)
         accountname = TextBox1.Text
         Me.Hide()
-        Homepage.Show()
+        Payment_Form.Show()
     End Sub
 End Class

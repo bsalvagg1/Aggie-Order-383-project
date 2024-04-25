@@ -23,6 +23,8 @@
         FileClose(2)
         imgcount = 0
         PictureBox1.Load(Image(imgcount))
+
+        Button4.Focus()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click

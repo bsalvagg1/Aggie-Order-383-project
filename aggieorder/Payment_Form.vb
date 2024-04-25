@@ -25,6 +25,17 @@ Public Class Payment_Form
         End If
     End Sub
 
+    Private Sub ExpiryDate_TextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles ExpiryDate_TextBox.KeyPress
+        ' Check if the entered character is a digit or a slash and if the length is less than 5
+        If (Not Char.IsDigit(e.KeyChar) AndAlso e.KeyChar <> "/"c) OrElse ExpiryDate_TextBox.TextLength >= 5 Then
+            e.Handled = True ' Ignore the input
+        ElseIf ExpiryDate_TextBox.TextLength = 2 AndAlso e.KeyChar <> "/"c Then
+            ExpiryDate_TextBox.Text &= "/" ' Add a slash after the second character
+            ExpiryDate_TextBox.SelectionStart = ExpiryDate_TextBox.TextLength ' Move the cursor to the end
+            e.Handled = True ' Ignore the input
+        End If
+    End Sub
+
     Private Sub Payment_Form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PaymentAmount_Label.Text = Format(tprice, "$0.00")
     End Sub
